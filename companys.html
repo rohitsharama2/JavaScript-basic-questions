@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+    <head>
+        <script src="./comp.js"></script>
+        
+    </head>
+    <body>
+        <div> <h1>Company Questions </h1></div>
+        <h2>Question 1</h2>
+        <div>
+            Input is a sequence of string that is formatted in the following way: name-yymm
+            
+             The return of the function shall first be sorted by yymm, then by the name (which varies in length).
+            
+             Sample :
+            
+             arraySort([ 'web-1305', 'site-1305', 'web-1304', 'site-1304' ])
+             Which should return: [ 'site-1304', 'web-1304', 'site-1305', 'web-1305' ]
+            </div>
+
+        <div>
+            <h2>Question 2</h2>
+        </div>
+
+        <div>Once upon a time, on a way through the old wild mountainous west,… … a man was given directions to go from one point to another. The directions were "NORTH", "SOUTH", "WEST", "EAST". Clearly "NORTH" and "SOUTH" are opposite, "WEST" and "EAST" too. Going in one direction and coming back in the opposite direction right away is a needless effort. Since this is the wild west, with dreadful weather and not much water, it's important to save yourself some energy, otherwise, you might die of thirst! cross the mountainous desert the smart way. Write a function direction that will take an array of strings and returns an array of strings with the needless directions removed (W<->E or S<->N side by side). sample 1 : direction(["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"]) Which should return: ["WEST"] You can immediately see that going "NORTH" and immediately "SOUTH" is not reasonable, better stay in the same place! So the task is to give the man a simplified version of the plan. A better plan, in this case, is simply: ["WEST"] sample 2 : In ["NORTH", "SOUTH", "EAST", "WEST"], the direction "NORTH" + "SOUTH" is going north and coming back right away. The path becomes ["EAST", "WEST"], now "EAST" and "WEST" annihilate each other, therefore, the final result is [] (nil in Clojure). In ["NORTH", "EAST", "WEST", "SOUTH", "WEST", "WEST"], "NORTH" and "SOUTH" are not directly opposite but they become directly opposite after the reduction of "EAST" and "WEST" so the whole path is reducible to ["WEST", "WEST"].</div>
+    </body>
+</html>
